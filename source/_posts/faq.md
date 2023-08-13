@@ -1,6 +1,7 @@
 ---
 title: 病毒吧常见问题汇总
 date: 2023-08-13 13:37:29
+permalink: /faq/
 tags:
 - Help
 ---
