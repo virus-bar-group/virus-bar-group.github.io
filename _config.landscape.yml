@@ -1,0 +1,38 @@
+# Header
+menu:
+  首页: /
+  Archives: /archives
+rss: /atom.xml
+banner: images/banner.jpg
+subtitle: 病毒吧官方网站
+
+# Content
+excerpt_link: Read More
+fancybox: true
+recent_posts_limits: 5
+# Footer
+copyright: |-
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a></br>
+  All website licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></br>
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+
+# Header links
+# Each name must correspond to the icon name of Fork Awesome
+# https://forkaweso.me/Fork-Awesome/icons/
+#links:
+#  github: https://github.com/your_github_account
+#  twitter: https://twitter.com/your_twitter_account
+#  telegram: https://t.me/your_telegram_account
