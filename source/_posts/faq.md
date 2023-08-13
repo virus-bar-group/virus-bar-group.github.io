@@ -7,10 +7,10 @@ tags:
 ---
 
 - Q1: 我该用什么杀毒软件？
-- A1: 目前病毒吧推荐卡巴斯基、Avast 和开核晶的 360 安全卫士极速版  
-  - 卡巴斯基目前情况比较特殊。最新版本官方公开了下载链接，但没有正式发布，付费用户使用此版本可能影响联系技术支持，且此版本与 CF 冲突，CF 玩家可以使用 21.3 版本。而 21.3 版本是官方正式发布的简体中文版本。  
-  - 卡巴斯基最新版下载链接：https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.13.5.506/startup.exe  
-  - 卡巴斯基 21.3 版本下载：https://www.kaspersky.com.cn/downloads （下载此页面的任意版本均可。）  
+- A1: 目前病毒吧推荐卡巴斯基、Avast 和开核晶的 360 安全卫士极速版
+  - 卡巴斯基目前情况比较特殊。最新版本官方公开了下载链接，但没有正式发布，付费用户使用此版本可能影响联系技术支持，且此版本与 CF 冲突，CF 玩家可以使用 21.3 版本。而 21.3 版本是官方正式发布的简体中文版本。
+  - 卡巴斯基最新版下载链接：https://dm.s.kaspersky-labs.com/zh-Hans-CN/Kaspersky4Win/21.13.5.506/startup.exe
+  - 卡巴斯基 21.3 版本下载：https://www.kaspersky.com.cn/downloads （下载此页面的任意版本均可。）
   - 下载后，无论是新版还是 21.3 版本，均需要输入激活码 `3SXCM-M9RJM-6985N-PWKP7` 转成免费版。
   - 注意事项：可看雨点整理的 https://bbs.kafan.cn/forum.php?mod=viewthread&tid=2255087
   - 新版设置教程：可参考一蓑烟雨制作的 https://www.bilibili.com/video/BV1fX4y1W7fx
