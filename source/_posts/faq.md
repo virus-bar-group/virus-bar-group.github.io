@@ -47,7 +47,7 @@ A5：请尽量准确的描述现象，并配上清晰的图片。
 
 Q6:右键菜单太长，该如何解决？
 A6：推荐使用Contextmenumanagerhttps://bluepointlilac.github.io/ContextMenuManager/
-如果不能正常下载请从此次下载：https://wwp.lanzoup.com/i9UF910yknfe  提取码 : ysyyhttps://www.123pan.com/s/AKObVv-jh9Ih.html
+如果不能正常下载请从此次下载:https://wwpy.lanzoub.com/iSkfD15atdmb https://www.123pan.com/s/AKObVv-jh9Ih.html
 
 
 Q7：右下角弹出“你的电脑被黑客入侵”等浏览器通知，会有事吗？
