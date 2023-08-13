@@ -12,8 +12,7 @@ language: zh
 timezone: ''
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: virus-bar-group.github.io
+url: https://virus-bar-group.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,5 +102,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/virus-bar-group/virus-bar-group.github.io
+  repo: git@github.com:virus-bar-group/virus-bar-group.github.io.git
   branch: gh-pages
