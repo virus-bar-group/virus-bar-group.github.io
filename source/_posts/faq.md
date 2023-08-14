@@ -57,7 +57,7 @@ Avast 下载地址：<https://www.avast.com/zh-cn/free-antivirus-download>
 
 ## Q4: 有文件我不确定是否安全，想请你们帮忙分析下，该如何做？
 
-请将文件压缩，再使用不限速网盘上传，使用 `infected` 作为压缩密码压缩密码。推荐的网盘有：
+请将文件压缩，再使用不限速网盘上传，使用 `infected` 作为压缩密码。推荐的网盘有：
 
 - 蓝奏云 <https://www.lanzoui.com/>
 - 123云盘 <https://www.123pan.com/>
