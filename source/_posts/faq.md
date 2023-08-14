@@ -26,12 +26,15 @@ tags:
 
 Avast 下载地址：<https://www.avast.com/zh-cn/free-antivirus-download>
 
+P.S 可能存在推广，在国内环境下可能存在误报。
+
 ### 360 安全卫士极速版
 
 360 安全卫士极速版日常使用起来一般是没有广告弹窗的，因此虽然这期间有静默安装其它软件的消息，但我们还是进行推荐，**记得要在360设置中开启核晶防护**。
 
 360 安全卫士极速版下载地址：<https://weishi.360.cn/jisu>
 
+P.S 可能存在推广，卸载程序繁琐复杂。
 
 ## Q2: 电脑上无用的软件反复安装，广告弹窗横行，我该如何处理？
 
@@ -62,7 +65,8 @@ Avast 下载地址：<https://www.avast.com/zh-cn/free-antivirus-download>
 - 蓝奏云 <https://www.lanzoui.com/>
 - 123云盘 <https://www.123pan.com/>
 - 奶牛快传 <https://cowtransfer.com/>
-- huang1111 <https://pan.huang1111.cn/>
+- huang1111网盘 <https://pan.huang1111.cn/>
+- 文叔叔 <https://wenshushu.cn/> （临时托管文件，分享链接24h内有效）
 
 
 ## Q5: 我该如何有效地发帖求助？
@@ -103,6 +107,7 @@ Windows 10 及以上系统其实自带`存储感知`功能。进入设置 → �
 ## Q9: 手机被锁机，该如何解决？
 
 一般遇到的是无障碍、悬浮窗等锁机，到手机官网查询如何进入安全模式，然后进入安全模式，到桌面卸载锁机软件即可。
+无障碍、悬浮窗等锁机如果手机开启了 USB 调试模式，还可以使用 adb 卸载。
 
 
 ## Q10: 电脑经常蓝屏，怎么解决？
