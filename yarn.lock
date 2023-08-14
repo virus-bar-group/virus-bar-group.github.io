@@ -1126,6 +1126,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hexo-generator-json-content@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "hexo-generator-json-content@npm:4.2.3"
+  dependencies:
+    hexo-util: latest
+    keyword-extractor: latest
+    moment: latest
+  checksum: d58ee2dc798e0e5cdb80d1ad8b3b782e8a83be24f350a857f787c106c3c95cf266324905fa099dd90069d23eb9df9b61342737c1a3185cc03fa400bc1efa6b04
+  languageName: node
+  linkType: hard
+
 "hexo-generator-tag@npm:^2.0.0":
   version: 2.0.0
   resolution: "hexo-generator-tag@npm:2.0.0"
@@ -1225,6 +1236,7 @@ __metadata:
     hexo-generator-archive: ^2.0.0
     hexo-generator-category: ^2.0.0
     hexo-generator-index: ^3.0.0
+    hexo-generator-json-content: ^4.2.3
     hexo-generator-tag: ^2.0.0
     hexo-renderer-ejs: ^2.0.0
     hexo-renderer-marked: ^6.0.0
@@ -1257,7 +1269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-util@npm:^3.1.0":
+"hexo-util@npm:^3.1.0, hexo-util@npm:latest":
   version: 3.1.0
   resolution: "hexo-util@npm:3.1.0"
   dependencies:
@@ -1632,6 +1644,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keyword-extractor@npm:latest":
+  version: 0.0.25
+  resolution: "keyword-extractor@npm:0.0.25"
+  checksum: 64bab0752cb648d319861ac442de71992806da51d3d9666b0a19c378db19b163206c3c753752f1054284901399063e81c0b8926584e3df88afbe4d3d4ec79089
+  languageName: node
+  linkType: hard
+
 "lower-case@npm:^2.0.2":
   version: 2.0.2
   resolution: "lower-case@npm:2.0.2"
@@ -1907,7 +1926,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"moment@npm:^2.29.1, moment@npm:^2.29.4":
+"moment@npm:^2.29.1, moment@npm:^2.29.4, moment@npm:latest":
   version: 2.29.4
   resolution: "moment@npm:2.29.4"
   checksum: 0ec3f9c2bcba38dc2451b1daed5daded747f17610b92427bebe1d08d48d8b7bdd8d9197500b072d14e326dd0ccf3e326b9e3d07c5895d3d49e39b6803b76e80e
