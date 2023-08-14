@@ -79,7 +79,11 @@ archive_type: 'monthly'
 show_count: true
 
 # Fancybox
-fancybox: false
+fancybox: true
+
+# Donate
+donate:
+  enable: false
 
 # Search
 search:
