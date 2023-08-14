@@ -86,26 +86,7 @@ search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
   baidu: false # you need to disable other search engines to use Baidu search
 
-# Donate
-donate:
-  enable: false
-  # 微信打赏
-  wechatpay:
-    qrcode: images/donate/wechatpayimg.png
-    title: 微信支付
-  # 支付宝打赏
-  alipay: 
-    qrcode: images/donate/alipayimg.png 
-    title: 支付宝
-
-# Share
-# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
-share:
-  enable: true  # 是否启用分享
-  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
-  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
-
-# Github
+# GitHub
 # github: 
 #   username: virus-bar-group  # github username
 
@@ -190,12 +171,6 @@ plugins:
   baidu_analytics: # enter Baidu Analytics hash key
   tencent_analytics: 
   
-# Miscellaneous
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:  
-  
 # profile
 profile:
   enabled: true # Whether to show profile bar
@@ -211,12 +186,6 @@ profile:
   social:
     links:
       github: https://github.com/virus-bar-group/
-      #weibo: http://weibo.com/cofess
-      #twitter: https://twitter.com/iwebued
-      # facebook: /
-      # dribbble: /
-      #behance: https://www.behance.net/cofess
-      #rss: atom.xml
     link_tooltip: true # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
@@ -227,13 +196,6 @@ profile:
     Bootstrap: ★★★☆☆
     ThinkPHP: ★★★☆☆
     平面设计: ★★★☆☆
-  # My Personal Links
-  links:
-    Github: https://github.com/virus-bar-group/
-    #Blog: http://blog.cofess.com
-    #微博: http://weibo.com/cofess
-    #花瓣: http://huaban.com/cofess
-    #Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
     - 前端
