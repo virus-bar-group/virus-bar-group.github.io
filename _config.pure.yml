@@ -186,7 +186,7 @@ profile:
   social:
     links:
       github: https://github.com/virus-bar-group/
-    link_tooltip: true # enable the social link tooltip, options: true, false
+    link_tooltip: false # enable the social link tooltip, options: true, false
   # My Skills 
   skills:
     Git: ★★★☆☆
