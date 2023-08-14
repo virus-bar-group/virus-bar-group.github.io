@@ -97,7 +97,7 @@ Windows 10 及以上系统其实自带`存储感知`功能。进入设置 → �
 
 推荐 [Wise Care 365](https://www.wisecleaner.com.cn/wise-care-365.html)、[CCleaner](https://www.ccleaner.com/zh-cn/ccleaner/download/standard) 和 [Dism++](https://github.com/Chuyu-Team/Dism-Multi-language)。
 
-若无法访问 Dism++，请从[奶牛快传](https://cowtransfer.com/s/0ae7455fc59141)或 [123 云盘](https://www.123pan.com/s/AKObVv-TH9Ih.html)下载。
+若无法访问 Dism++，请从 [123 云盘](https://www.123pan.com/s/AKObVv-TH9Ih.html)下载。
 
 **注意**：CCleaner 安装完第一次打开会询问是否安装 AVG，一定要点拒绝。
 
