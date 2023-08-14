@@ -2,11 +2,11 @@
 menu:
   Home: .
   Archives: archives  # 归档
-  Categories: categories  # 分类
-  Tags: tags  # 标签
-  Repository: repository  # github repositories
+  #Categories: categories  # 分类
+  #Tags: tags  # 标签
+  #Repository: repository  # github repositories
   #Books: books  # 豆瓣书单
-  #Links: links  # 友链
+  Links: links  # 友链
   About: about  # 关于
 
 # Enable/Disable menu icons
@@ -119,7 +119,7 @@ repository:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: valine  # 启用哪种评论系统
+  type: #valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: #1783844 # enter youyan uid 
@@ -171,7 +171,7 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
     enable: false  # leancloud统计
     app_id: # leancloud <AppID>
@@ -229,11 +229,11 @@ profile:
     平面设计: ★★★☆☆
   # My Personal Links
   links:
-    Github: https://github.com/cofess
-    Blog: http://blog.cofess.com
-    微博: http://weibo.com/cofess
-    花瓣: http://huaban.com/cofess
-    Behance: https://www.behance.net/cofess
+    Github: https://github.com/virus-bar-group/
+    #Blog: http://blog.cofess.com
+    #微博: http://weibo.com/cofess
+    #花瓣: http://huaban.com/cofess
+    #Behance: https://www.behance.net/cofess
   # My Personal Labels
   labels:
     - 前端
