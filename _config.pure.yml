@@ -189,7 +189,7 @@ profile:
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: 病毒吧
   author_title: 病毒吧官方账号
-  author_description: 个人简介。
+  author_description: 讨论计算机、网络和电子设备安全的社区
   location: 中国
   follow: https://virus-bar-group.github.io/
   # Social Links
