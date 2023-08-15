@@ -2,10 +2,10 @@
 menu:
   Home: .
   Archives: archives  # 归档
-  #Categories: categories  # 分类
-  #Tags: tags  # 标签
-  #Repository: repository  # github repositories
-  #Books: books  # 豆瓣书单
+  # Categories: categories  # 分类
+  # Tags: tags  # 标签
+  # Repository: repository  # github repositories
+  # Books: books  # 豆瓣书单
   Links: links  # 友链
   About: about  # 关于
 
@@ -14,10 +14,10 @@ menu_icons:
   enable: true  # 是否启用导航菜单图标
   home: icon-home-fill
   archives: icon-archives-fill
-  #categories: icon-folder
-  #tags: icon-tags
-  #repository: icon-project
-  #books: icon-book-fill
+  # categories: icon-folder
+  # tags: icon-tags
+  # repository: icon-project
+  # books: icon-book-fill
   links: icon-friendship
   about: icon-cup-fill
 
@@ -90,6 +90,13 @@ search:
   insight: true # you need to install `hexo-generator-json-content` before using Insight Search
   baidu: false # you need to disable other search engines to use Baidu search
 
+# Share
+# weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
+share:
+  enable: false  # 是否启用分享
+  sites: weibo,qq,wechat,facebook,twitter  # PC端显示的分享图标
+  mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
+
 # GitHub
 # github: 
 #   username: virus-bar-group  # github username
@@ -104,7 +111,7 @@ repository:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: #valine  # 启用哪种评论系统
+  type: false # valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: #1783844 # enter youyan uid 
@@ -177,7 +184,7 @@ plugins:
   
 # profile
 profile:
-  enabled: true # Whether to show profile bar
+  enabled: true
   articleSelfBlock: false # 关闭文章下方的自我介绍
   avatar: /images/logo.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
@@ -189,30 +196,44 @@ profile:
   # Social Links
   social:
     links:
-      github: https://github.com/virus-bar-group/
-    link_tooltip: false # enable the social link tooltip, options: true, false
+      github: https://github.com/virus-bar-group
+      # weibo:
+      # twitter:
+      # facebook: 
+      # dribbble: 
+      # behance: https://www.behance.net/cofess
+      # rss: atom.xml
+    link_tooltip: true  # enable the social link tooltip, options: true, false
   # My Skills 
-  skills:
-    Git: ★★★☆☆
-    Gulp: ★★★☆☆
-    Javascript: ★★★☆☆
-    HTML+CSS: ★★★☆☆
-    Bootstrap: ★★★☆☆
-    ThinkPHP: ★★★☆☆
-    平面设计: ★★★☆☆
+  # skills:
+  #   Git: ★★★☆☆
+  #   Gulp: ★★★☆☆
+  #   Javascript: ★★★☆☆
+  #   HTML+CSS: ★★★☆☆
+  #   Bootstrap: ★★★☆☆
+  #   ThinkPHP: ★★★☆☆
+  #   平面设计: ★★★☆☆
+  # My Personal Links
+  links:
+    GitHub: https://github.com/virus-bar-group
+    # Blog: 
+    # 微博: 
+    # 花瓣: 
+    # Behance: 
   # My Personal Labels
   labels:
-    - 前端
-    - 前端开发
-    - 前端重构
-    - Web前端
-    - 网页重构
+    # - 前端
+    # - 前端开发
+    # - 前端重构
+    # - Web前端
+    # - 网页重构
+    - N/A
   # My Personal Works
   works:
     name:
       link: http://www.example.com
       date: 2016
   # My Personal Projects
-  projects:
-    cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
-    cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
+  projects: {}
+    # cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
+    # cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
