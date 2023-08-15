@@ -131,7 +131,6 @@ comment:
     ClientSecret:  #必须. GitHub Application Client Secret.
     enableHotKey: true
     language: zh-CN
-    
   valine: # Valine. https://valine.js.org
     appid:  # your leancloud application appid
     appkey:  # your leancloud application appkey
@@ -215,25 +214,20 @@ profile:
   #   平面设计: ★★★☆☆
   # My Personal Links
   links:
+    贴吧: https://tieba.baidu.com/f?kw=病毒
     GitHub: https://github.com/virus-bar-group
     # Blog: 
     # 微博: 
     # 花瓣: 
     # Behance: 
-  # My Personal Labels
   labels:
-    # - 前端
-    # - 前端开发
-    # - 前端重构
-    # - Web前端
-    # - 网页重构
-    - N/A
-  # My Personal Works
-  works:
-    name:
-      link: http://www.example.com
-      date: 2016
-  # My Personal Projects
-  projects: {}
+    - 计算机安全
+    - 网络安全
+    - 安全技巧
+  # works:
+  #   name:
+  #     link: http://www.example.com
+  #     date: 2016
+  # projects:
     # cofess/gulp-startpro: https://github.com/cofess/gulp-startpro
     # cofess/hexo-theme-pure: https://github.com/cofess/hexo-theme-pure
