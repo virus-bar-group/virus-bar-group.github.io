@@ -3,7 +3,12 @@ title: 病毒吧常见问题汇总
 date: 2023-08-13 13:37:29
 permalink: /faq/
 tags:
-- Help
+- 帮助
+
+source_text: 病毒吧常见问题汇总解答
+source_link: https://zhuanlan.zhihu.com/p/642277819
+source_author_text: 一蓑烟雨
+source_author_link: https://www.zhihu.com/people/12-64-85-4
 ---
 
 ## Q1: 我该用什么杀毒软件？
