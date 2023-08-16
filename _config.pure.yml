@@ -3,7 +3,7 @@ menu:
   Home: .
   Archives: archives  # 归档
   # Categories: categories  # 分类
-  # Tags: tags  # 标签
+  Tags: tags  # 标签
   # Repository: repository  # github repositories
   # Books: books  # 豆瓣书单
   Links: links  # 友链
@@ -15,7 +15,7 @@ menu_icons:
   home: icon-home-fill
   archives: icon-archives-fill
   # categories: icon-folder
-  # tags: icon-tags
+  tags: icon-tags
   # repository: icon-project
   # books: icon-book-fill
   links: icon-friendship
