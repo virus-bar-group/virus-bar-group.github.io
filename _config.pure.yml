@@ -111,17 +111,17 @@ repository:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: false # valine  # 启用哪种评论系统
+  type: gitment # valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: #1783844 # enter youyan uid 
   livere:
     uid: # enter youyan uid 
   gitment:
-    githubID: 
-    repo: 
-    ClientID: 
-    ClientSecret: 
+    githubID: virus-bar-group
+    repo: https://github.com/virus-bar-group/website-comments.git
+    ClientID: eb6130a01ffc0d5d63c1
+    ClientSecret: ff69aa1efd31256e78d1ea16e4603e934bd88c0d
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
     owner:  #必须. GitHub repository 所有者，可以是个人或者组织。
