@@ -1,7 +1,7 @@
 ---
 title: 本站评论功能说明
 date: 2023-08-16 18:40:00
-premalink: /site-faq/comments/
+permalink: /site-faq/comments/
 tags:
 - 本站帮助
 ---
