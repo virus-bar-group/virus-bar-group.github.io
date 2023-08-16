@@ -111,7 +111,7 @@ repository:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 comment:
-  type: gittalk # valine  # 启用哪种评论系统
+  type: gitalk # valine  # 启用哪种评论系统
   disqus:  # enter disqus shortname here
   youyan: 
     uid: #1783844 # enter youyan uid 
