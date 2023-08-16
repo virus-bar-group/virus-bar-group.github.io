@@ -58,9 +58,9 @@ P.S 可能存在推广，卸载程序繁琐复杂。
 
 打开后无需更新数据库，若遇到无法拦截的弹窗，点击界面中的加号，拖动类似瞄准镜的图标到弹窗上，然后点确定。如果不能拦截就勾选模拟点击（如果确认不是软件主程序的弹窗，可以勾选强制结束进程）。如下图：
 
-<div style="width: 500px; margin: auto;">{% asset_img faq-adkiller-1.png %}</div>
-<div style="width: 500px; margin: auto;">{% asset_img faq-adkiller-2.png %}</div>
-<div style="width: 500px; margin: auto;">{% asset_img faq-adkiller-3.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-adkiller-1.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-adkiller-2.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-adkiller-3.png %}</div>
 
 
 ## Q4: 有文件我不确定是否安全，想请你们帮忙分析下，该如何做？
@@ -95,8 +95,8 @@ P.S 可能存在推广，卸载程序繁琐复杂。
 
 Windows 10 及以上系统其实自带`存储感知`功能。进入设置 → 系统 → 存储，点临时文件，就会开始扫描。扫描完成后勾选想清理的选项，（如果有）更新清理要勾选上。
 
-<div style="width: 500px; margin: auto;">{% asset_img faq-trash-1.png %}</div>
-<div style="width: 500px; margin: auto;">{% asset_img faq-trash-2.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-trash-1.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-trash-2.png %}</div>
 
 ### 第三方清理软件
 
@@ -106,7 +106,7 @@ Windows 10 及以上系统其实自带`存储感知`功能。进入设置 → �
 
 **注意**：CCleaner 安装完第一次打开会询问是否安装 AVG，一定要点拒绝。
 
-<div style="width: 500px; margin: auto;">{% asset_img faq-ccleaner.png %}</div>
+<div style="width: 80%; margin: auto;">{% asset_img faq-ccleaner.png %}</div>
 
 
 ## Q9: 手机被锁机，该如何解决？
