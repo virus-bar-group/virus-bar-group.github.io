@@ -119,14 +119,14 @@ comment:
     uid: # enter youyan uid 
   gitment:
     githubID: virus-bar-group
-    repo: https://github.com/virus-bar-group/website-comments.git
+    repo: website-comments
     ClientID: eb6130a01ffc0d5d63c1
     ClientSecret: ff69aa1efd31256e78d1ea16e4603e934bd88c0d
     lazy: false
   gitalk: # gitalk. https://gitalk.github.io/
     owner: virus-bar-group #必须. GitHub repository 所有者，可以是个人或者组织。
     admin: virus-bar-group #必须. GitHub repository 的所有者和合作者 (对这个 repository 有写权限的用户)。
-    repo: https://github.com/virus-bar-group/website-comments.git #必须. GitHub repository.
+    repo: website-comments #必须. GitHub repository.
     ClientID: eb6130a01ffc0d5d63c1 #必须. GitHub Application Client ID.
     ClientSecret: ff69aa1efd31256e78d1ea16e4603e934bd88c0d #必须. GitHub Application Client Secret.
     enableHotKey: true
