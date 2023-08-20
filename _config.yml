@@ -9,11 +9,11 @@ description: ''
 keywords:
 author: Virus Bar
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 url: https://virus-bar-group.github.io/
-permalink: :year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -107,3 +107,9 @@ deploy:
   type: git
   repo: git@github.com:virus-bar-group/virus-bar-group.github.io.git
   branch: gh-pages
+
+browsersync:
+  logLevel: "warn"
+  ghostMode:
+    scroll: true
+  instanceName: "uniqueString"
