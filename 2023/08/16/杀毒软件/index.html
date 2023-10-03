@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>杀毒软件是如何工作的 | 病毒吧</title>
+  <meta name="description" content="杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性本文将详细介绍杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性。 一、病毒和恶意软件的定义病毒（Virus）病毒是一种自我复制的计算机程序，它依附于其他程序或文件，通过感染这些程序或文件来传播自身。一旦感染了计算机系统，病毒可能会破坏数据、窃取信息或者使计算机无法正常运行。 恶意软件（Malware）恶意软件是一种广义的术语，用来">
+<meta property="og:type" content="article">
+<meta property="og:title" content="杀毒软件是如何工作的">
+<meta property="og:url" content="https://virus-bar-group.github.io/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/index.html">
+<meta property="og:site_name" content="病毒吧">
+<meta property="og:description" content="杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性本文将详细介绍杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性。 一、病毒和恶意软件的定义病毒（Virus）病毒是一种自我复制的计算机程序，它依附于其他程序或文件，通过感染这些程序或文件来传播自身。一旦感染了计算机系统，病毒可能会破坏数据、窃取信息或者使计算机无法正常运行。 恶意软件（Malware）恶意软件是一种广义的术语，用来">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-08-16T03:30:26.000Z">
+<meta property="article:modified_time" content="2023-10-03T20:19:08.247Z">
+<meta property="article:author" content="Virus Bar">
+<meta property="article:tag" content="科普">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://virus-bar-group.github.io/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="病毒吧" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+    <link href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.css" rel="stylesheet">
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://virus-bar-group.github.io/" target="_blank">
+          <img class="img-circle img-rotate" src="/images/logo.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">病毒吧</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">病毒吧官方账号</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 中国</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">友链</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">关于</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/virus-bar-group" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎进入病毒吧官方网站!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A8%B1%E4%B9%90/" rel="tag">娱乐</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B8%AE%E5%8A%A9/" rel="tag">帮助</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%AC%E7%AB%99%E5%B8%AE%E5%8A%A9/" rel="tag">本站帮助</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A7%91%E6%99%AE/" rel="tag">科普</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/%E5%A8%B1%E4%B9%90/" style="font-size: 13px;">娱乐</a> <a href="/tags/%E5%B8%AE%E5%8A%A9/" style="font-size: 14px;">帮助</a> <a href="/tags/%E6%9C%AC%E7%AB%99%E5%B8%AE%E5%8A%A9/" style="font-size: 13px;">本站帮助</a> <a href="/tags/%E7%A7%91%E6%99%AE/" style="font-size: 13px;">科普</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">九月 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">八月 2023</a><span class="archive-list-count">7</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2023/09/26/%E9%87%8D%E8%A3%85%E6%97%B6%E5%8A%A0%E8%BD%BD%20Intel%20RST%20%E9%A9%B1%E5%8A%A8/" class="title">在系统重装时加载 Intel RST 驱动</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-09-26T14:22:00.000Z" itemprop="datePublished">2023-09-26</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2023/08/19/%E9%A2%84%E9%98%B2%E6%B5%81%E6%B0%93%E8%BD%AF%E4%BB%B6/" class="title">教你预防电脑流氓软件</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-08-19T14:22:00.000Z" itemprop="datePublished">2023-08-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/site-faq/comments/" class="title">本站评论功能说明</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-08-16T10:40:00.000Z" itemprop="datePublished">2023-08-16</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/" class="title">杀毒软件是如何工作的</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-08-16T03:30:26.000Z" itemprop="datePublished">2023-08-16</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/group_newz/" class="title">羣见闻</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2023-08-15T16:35:40.000Z" itemprop="datePublished">2023-08-16</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+  <aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <div style="display: flex; align-items: baseline; flex-wrap: nowrap;">
+        <h3 class="toc-title" style="flex-grow: 1;">目录</h3>
+        <span data-toggle="collapse" href="#collapseToc" title="关闭目录" style="cursor: pointer;">
+          <i class="icon icon-close"></i>
+        </span>
+      </div>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%98%AF%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C%E7%9A%84%EF%BC%8C%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E5%9C%A8%E4%BF%9D%E6%8A%A4%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E6%96%B9%E9%9D%A2%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="toc-text">杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%97%85%E6%AF%92%E5%92%8C%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">一、病毒和恶意软件的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%97%85%E6%AF%92%EF%BC%88Virus%EF%BC%89"><span class="toc-text">病毒（Virus）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%81%B6%E6%84%8F%E8%BD%AF%E4%BB%B6%EF%BC%88Malware%EF%BC%89"><span class="toc-text">恶意软件（Malware）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">二、杀毒软件的工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7"><span class="toc-text">三、杀毒软件的重要性</span></a></li></ol></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-杀毒软件" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      杀毒软件是如何工作的
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <div>
+          <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/" class="article-date">
+	  <time datetime="2023-08-16T03:30:26.000Z" itemprop="datePublished">2023-08-16</time>
+	</a>
+</span>
+          
+          
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/%E7%A7%91%E6%99%AE/" rel="tag">科普</a>
+  </span>
+
+
+          
+	<span class="article-read hidden-xs">
+	    <i class="icon icon-eye-fill" aria-hidden="true"></i>
+	    <span id="busuanzi_container_page_pv">
+			<span id="busuanzi_value_page_pv">0</span>
+		</span>
+	</span>
+
+
+          <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/#comments" class="article-comment-link">评论</a></span>
+          
+	
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 1.3k(字)</span>
+	
+	
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 4(分)</span>
+	
+
+        </div>
+        <div>
+          
+
+        </div>
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性"><a href="#杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性" class="headerlink" title="杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性"></a>杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性</h1><p>本文将详细介绍杀毒软件是如何工作的，以及它们在保护计算机安全方面的重要性。</p>
+<h2 id="一、病毒和恶意软件的定义"><a href="#一、病毒和恶意软件的定义" class="headerlink" title="一、病毒和恶意软件的定义"></a>一、病毒和恶意软件的定义</h2><h3 id="病毒（Virus）"><a href="#病毒（Virus）" class="headerlink" title="病毒（Virus）"></a>病毒（Virus）</h3><p>病毒是一种自我复制的计算机程序，它依附于其他程序或文件，通过感染这些程序或文件来传播自身。一旦感染了计算机系统，病毒可能会破坏数据、窃取信息或者使计算机无法正常运行。</p>
+<h3 id="恶意软件（Malware）"><a href="#恶意软件（Malware）" class="headerlink" title="恶意软件（Malware）"></a>恶意软件（Malware）</h3><p>恶意软件是一种广义的术语，用来描述任何设计用来破坏计算机系统、窃取数据或者干扰计算机正常运行的程序。恶意软件包括病毒、蠕虫、特洛伊木马、勒索软件等。</p>
+<h2 id="二、杀毒软件的工作原理"><a href="#二、杀毒软件的工作原理" class="headerlink" title="二、杀毒软件的工作原理"></a>二、杀毒软件的工作原理</h2><p>杀毒软件的工作原理主要包括以下几个方面：</p>
+<ol>
+<li><p><strong>病毒特征库</strong>：杀毒软件通常会维护一个病毒特征库，其中包含了已知病毒的相关信息，如病毒的签名、病毒的静态特征和动态行为等。当杀毒软件扫描到可疑的文件时，它会将文件的特征与病毒特征库中的记录进行比对，以判断文件是否受到病毒感染。</p>
+</li>
+<li><p><strong>启发式分析</strong>：启发式分析是一种基于模式识别的技术，它通过分析病毒的代码结构、行为和通信方式等特点，来检测未知的或者变形的病毒。启发式引擎会根据已知病毒的特征生成一种“指纹”，然后与被检测文件进行比对，如果发现匹配的模式，就会被认为是病毒或恶意软件。</p>
+</li>
+<li><p><strong>实时保护</strong>：实时保护是杀毒软件最基本的功能之一，它通过监控文件的读写操作、网络连接、系统调用等行为，来检测病毒对计算机系统的潜在威胁。当杀毒软件检测到可疑的行为时，它会立即采取措施，如阻止病毒的执行、删除受感染的文件或者隔离病毒等。</p>
+</li>
+<li><p><strong>自动更新</strong>：为了应对不断出现的新的病毒和恶意软件，杀毒软件需要定期更新其病毒库。病毒库包含了已知病毒的特征信息，杀毒软件会根据这些信息来判断一个文件是否受到感染。自动更新功能可以让杀毒软件在后台自动下载并安装最新的病毒库，从而确保其具备最新的防护能力。</p>
+</li>
+<li><p><strong>沙箱技术</strong>：沙箱技术是一种将程序运行在一个虚拟环境中的技术，它可以限制程序对系统资源的访问，从而防止病毒或恶意软件对计算机系统造成破坏。当杀毒软件检测到可疑的程序时，它会将程序放入沙箱中运行，以观察其行为并确保不会对系统造成损害。</p>
+</li>
+<li><p><strong>深度扫描和漏洞利用</strong>：某些高级杀毒软件还提供深度扫描和漏洞利用功能。深度扫描会全面地检查计算机系统的所有文件和内存区域，以发现潜在的病毒或恶意软件。漏洞利用则是指杀毒软件能够检测到并利用系统中的安全漏洞，以阻止病毒或恶意软件的入侵。</p>
+</li>
+</ol>
+<h2 id="三、杀毒软件的重要性"><a href="#三、杀毒软件的重要性" class="headerlink" title="三、杀毒软件的重要性"></a>三、杀毒软件的重要性</h2><ol>
+<li><p><strong>防止数据丢失</strong>：病毒和恶意软件可能会导致计算机系统崩溃、数据丢失或者泄露敏感信息。通过使用杀毒软件，用户可以有效地保护重要数据免受损失。</p>
+</li>
+<li><p><strong>保护隐私</strong>：病毒和恶意软件可能会窃取用户的个人信息，如用户名、密码、银行账户等。使用杀毒软件可以帮助用户保护自己的隐私安全。</p>
+</li>
+<li><p><strong>维护系统性能</strong>：病毒感染可能会导致计算机运行缓慢、频繁死机等问题。杀毒软件可以有效地检测和清除病毒，从而保持系统的正常运行。</p>
+</li>
+<li><p><strong>防止网络攻击</strong>：许多病毒和恶意软件都具有远程控制功能，可以用来发动分布式拒绝服务（DDoS）攻击或者窃取网络资源。使用杀毒软件可以降低这些风险。</p>
+</li>
+</ol>
+<p>总之，杀毒软件是计算机安全的重要组成部分，它们通过实时保护、自动更新、扫描和清理等功能来检测和移除病毒和恶意软件，从而保护用户的数据安全和隐私。在使用计算机时，我们应该养成定期更新杀毒软件的习惯，以确保其具备最新的防护能力。</p>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong><a href="https://virus-bar-group.github.io/2023/08/16/%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6/" title="杀毒软件是如何工作的" target="_blank" rel="external">https://virus-bar-group.github.io/2023/08/16/杀毒软件/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明：</strong>本文采用
+      
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="external">CC BY-NC-SA 4.0</a>
+      
+      进行许可，请在转载或分享时注意。
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://virus-bar-group.github.io/" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/logo.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://virus-bar-group.github.io/" target="_blank"><span class="text-dark">病毒吧</span><small class="ml-1x">病毒吧官方账号</small></a></h3>
+        <div>讨论计算机、网络和电子设备安全的社区</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/site-faq/comments/" title="本站评论功能说明"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/group_newz/" title="羣见闻"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="目录" role="button">
+        <span style="display: inline;">[&nbsp;目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span style="display: inline;">]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/virus-bar-group" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        &copy; 2023 Virus Bar
+        
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  var requiredFields = 'nick,mail';
+  requiredFields = requiredFields.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '5qwVk2uYBvdH4SOrT6sfrEeI-gzGzoHsz',
+    appKey: 'L33KCTrByBUlcdZTiVgJ4Tz7',
+    placeholder: 'Any thoughts?',
+    avatar: 'retro',
+    meta: meta,
+    requiredFields: requiredFields,
+    pageSize: '10' || 10,
+    visitor: false,
+    enableQQ: false
+  });
+  </script>
+
+     
+
+
+
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.3.5/dist/jquery.fancybox.min.js"></script>
+  <script>
+  //利用 FancyBox 实现点击图片放大
+  $(document).ready(function() {
+    $('article img').not('[hidden]').not('.panel-body img').each(function() {
+      var $image = $(this);
+      var imageCaption = $image.attr('alt');
+      var $imageWrapLink = $image.parent('a');
+      if ($imageWrapLink.length < 1) {
+        var src = this.getAttribute('src');
+        var idx = src.lastIndexOf('?');
+        if (idx != -1) {
+          src = src.substring(0, idx);
+        }
+        $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+      }
+      $imageWrapLink.attr('data-fancybox', 'images');
+      if (imageCaption) {
+        $imageWrapLink.attr('data-caption', imageCaption);
+      }
+    });
+    $().fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+    });
+  });
+  </script>
+
+
+
+
+
+</body>
+</html>
